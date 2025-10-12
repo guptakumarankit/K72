@@ -9,3 +9,17 @@
     font-family: font2;
     src: url(../public/fonts/Lausanne-500.woff2);
 }
+
+.moveX{
+    animation-name: moveAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes moveAnimation{
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-100%)
+    }
+}

@@ -34,6 +34,12 @@ const Agency = () => {
         start: "top 20%",
         end: "top -225%",
         pin: true,
+        pinSpacing: true,
+        pinType : 'transform',
+        pinReparent: true,
+        scrub:1,  // smooth scrubbing 
+        anticipatePin : 1 ,
+        invalidateOnRefresh : true ,
         onUpdate:(elem) => {
           // console.log(Math.floor(elem.progress * imageArray.length))
 
@@ -54,7 +60,7 @@ const Agency = () => {
 
   return (
     <div>
-      <div className="section1 h-screen">
+      <div className="section1 h-screen py-1">
         <div
           ref={imageDevRef}
           className="h-[20vw] w-[15vw] rounded-3xl absolute top-30 left-[30vw] overflow-hidden"

@@ -11,13 +11,13 @@ const App = () => {
 
   return (
     <div className='text-black'>
-      {/* <NavBar/> */}
+      <NavBar/>
       <FullScreenNav/>
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<Home/>} />
         <Route path='/agency' element={<Agency/>} />
         <Route path='/project' element={<Project/>} />
-      </Routes> */}
+      </Routes>
     </div>
   )
 }

@@ -19,9 +19,12 @@ const NavBar = () => {
      onMouseLeave={() => {
         navColorChange.current.style.height = '0%'
      }}
-     className='bg-black h-16 relative w-[16vw] text-white'>
+     className='bg-black h-12 relative w-[16vw] text-white'>
         <div ref={navColorChange} className='bg-[#D3FD50] absolute top-0 h-0 w-full'></div>
-        <div className='relative'>lkjjj</div>
+        <div className='h-full flex flex-col gap-1 justify-center items-end px-8'>
+         <div className='w-14 h-0.5 bg-white'></div>
+         <div className='w-10 h-0.5 bg-white'></div>
+        </div>
      </div>
     </div>
   )

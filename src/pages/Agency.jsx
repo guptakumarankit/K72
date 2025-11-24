@@ -30,9 +30,9 @@ const Agency = () => {
     gsap.to(imageDevRef.current, {
       scrollTrigger: {
         trigger: imageDevRef.current,
-        markers: true,
-        start: "top 20%",
-        end: "top -225%",
+      
+        start: "top 10%",
+        end: "top -285%",
         pin: true,
         pinSpacing: true,
         pinType : 'transform',
@@ -41,8 +41,6 @@ const Agency = () => {
         anticipatePin : 1 ,
         invalidateOnRefresh : true ,
         onUpdate:(elem) => {
-          // console.log(Math.floor(elem.progress * imageArray.length))
-
           let imageIndex ;
 
           if(elem.progress < 1){
@@ -60,10 +58,10 @@ const Agency = () => {
 
   return (
     <div>
-      <div className="section1 h-screen py-1">
+      <div className="section1 h-screen py-1 relative">
         <div
           ref={imageDevRef}
-          className="h-[20vw] w-[15vw] rounded-3xl absolute top-30 left-[30vw] overflow-hidden"
+          className="h-[20vw] w-[15vw] rounded-3xl absolute top-[37vh] left-[30vw] overflow-hidden"
         >
           <img ref={imageRef}
             className="w-full h-full object-cover"

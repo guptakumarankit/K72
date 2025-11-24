@@ -92,7 +92,7 @@ const FullScreenNav = () => {
         
       </div>
       <div className=''>
-        <div className='relative link border-t-1' >
+        <div onClick={() => window.location.href = "/project"} className='relative link border-t-1' >
             <h1 className='font-[font2] text-[8vw] text-center uppercase leading-[0.8] pt-7'>Projects</h1>
             <div className='moveLink absolute flex top-0 bg-[#D3FD50]'>
                 <div className='moveX flex items-center'>
@@ -117,7 +117,7 @@ const FullScreenNav = () => {
             </div>
         </div>
 
-        <div className='relative link border-t-1'>
+        <div onClick={() => window.location.href = "/agency"} className='relative link border-t-1'>
             <h1 className='font-[font2] text-[8vw] text-center uppercase leading-[0.8] pt-7'>Agency</h1>
             <div className='moveLink absolute flex top-0 bg-[#D3FD50]'>
                 <div className='moveX flex items-center'>
@@ -142,8 +142,8 @@ const FullScreenNav = () => {
             </div>
         </div>
         
-        <div className='relative link border-t-1'>
-            <h1 className='font-[font2] text-[8vw] text-center uppercase leading-[0.8] pt-7'>Contacts</h1>
+        <div onClick={() => window.location.href = "https://portfolio-kappa-six-hp5j8jzyc8.vercel.app/"} className='relative link border-t-1'>
+            <h1 className='font-[font2] text-[8vw] text-center uppercase leading-[0.8] pt-7'>About Me</h1>
             <div className='moveLink absolute flex top-0 bg-[#D3FD50]'>
                 <div className='moveX flex items-center'>
                     <h2 className="whitespace-nowrap font-[font2] text-[8vw] text-center uppercase leading-[0.8] pt-7">See Everything</h2>
@@ -167,8 +167,8 @@ const FullScreenNav = () => {
             </div>
         </div>
 
-        <div className='relative link border-t-1 border-b-1'>
-            <h1 className='font-[font2] text-[8vw] text-center uppercase leading-[0.8] pt-7'>Blog</h1>
+        <div onClick={() => window.location.href = "/"} className='relative link border-t-1 border-b-1'>
+            <h1 className='font-[font2] text-[8vw] text-center uppercase leading-[0.8] pt-7'>Home</h1>
             <div className='moveLink absolute flex top-0 bg-[#D3FD50]'>
                 <div className='moveX flex items-center'>
                     <h2 className="whitespace-nowrap font-[font2] text-[8vw] text-center uppercase leading-[0.8] pt-7">See Everything</h2>
